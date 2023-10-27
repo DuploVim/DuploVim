@@ -8,8 +8,7 @@ if not vim.loop.fs_stat(lazypath) then
     "--branch=stable", -- latest stable release
     lazypath,
   })
-end
-vim.opt.rtp:prepend(lazypath)
+end vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	{ 'phaazon/hop.nvim' },
@@ -30,4 +29,18 @@ require("lazy").setup({
  	 	dependencies = { {'nvim-tree/nvim-web-devicons'}}
 	},
 	{ 'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
+	{ 'vimsence/vimsence' },
+	{
+    	'windwp/nvim-autopairs',
+    	event = "InsertEnter",
+    	opts = {}
+	},
+	{
+  		"folke/which-key.nvim",
+  		event = "VeryLazy",
+  		init = function()
+    		vim.o.timeout = true
+    		vim.o.timeoutlen = 300
+  		end,
+	},
 })

@@ -3,6 +3,8 @@ DuploVim is a very easy and customizable neovim configuration
 
 # Requirements
 - ccls
+- lua-language-server
+- pylyzer
 - neovim (latest)
 
 # Installation

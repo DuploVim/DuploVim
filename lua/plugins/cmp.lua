@@ -23,7 +23,7 @@ local cmp = require'cmp'
 		  if cmp.visible() then
 			  cmp.select_next_item()
 		  else
-			  fallbeck()
+			  fallback()
 		  end
 	  end, {"i", "s"}),
       ['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -60,15 +60,7 @@ local cmp = require'cmp'
   cmp.setup.cmdline(':', {
     mapping = cmp.mapping.preset.cmdline(),
     sources = cmp.config.sources({
-      { name = 'path' }
-    }, {
-      { name = 'cmdline' }
-    })
+      { name = 'path' },
+      { name = 'cmdline' },
+  	}),
   })
-
-  -- Set up lspconfig.
-  local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['ccls'].setup {
-    capabilities = capabilities
-  }
