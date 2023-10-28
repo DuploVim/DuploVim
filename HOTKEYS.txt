@@ -1,0 +1,17 @@
+HOTKEYS
+Tabs:
+	Alt-Tab - next tab
+	Alt-. - next tab too
+	Alt-, - previous tab
+	Ctrl-W - close tab
+
+Comments(only custom):
+	SPC / - toggle line comment
+
+NeoTree:
+	SPC e - focus NeoTree
+	SPC o - NeoTree git status
+
+Other:
+	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
+	SPC h - display this help

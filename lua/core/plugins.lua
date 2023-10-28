@@ -22,7 +22,7 @@ require("lazy").setup({
 	{ 'nvim-treesitter/nvim-treesitter' },
 	{ 'neovim/nvim-lspconfig' },
 	{ 'catppuccin/nvim' },
-	{ 'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'}, {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
+	{ 'hrsh7th/vim-vsnip' }, { 'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'}, {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
 	{
 		'nvimdev/dashboard-nvim',
 		event = 'VimEnter',
@@ -47,4 +47,15 @@ require("lazy").setup({
 		}
 	},
 	{ 'codota/tabnine-nvim', build = "./dl_binaries.sh" },
+	{ 'numToStr/Comment.nvim' },
+	{'romgrk/barbar.nvim',
+    	dependencies = {
+      		'lewis6991/gitsigns.nvim',
+      		'nvim-tree/nvim-web-devicons',
+    	},
+    	init = function() vim.g.barbar_auto_setup = false end,
+    	opts = {
+    	},
+   		version = '^1.7.0', -- optional: only update when a new 1.x version is released
+  	},
 })

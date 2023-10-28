@@ -28,6 +28,16 @@ require('dashboard').setup {
                 action = ':Neotree focus'
             },
 			{
+                icon = ' ',
+                icon_hl = 'Title',
+                desc = 'Display hotkeys',
+                desc_hl = 'String',
+                key = 'h',
+                keymap = 'SPC h',
+                key_hl = 'Number',
+                action = ':e $HOME/.config/nvim/HOTKEYS.txt'
+            },
+			{
                 icon = ' ',
                 icon_hl = 'Title',
                 desc = 'GET OUT OF VIM',
@@ -36,7 +46,7 @@ require('dashboard').setup {
                 keymap = 'SPC q q a a',
                 key_hl = 'Number',
                 action = ':qa!'
-            }
+            },	
         }
 	}
 }
