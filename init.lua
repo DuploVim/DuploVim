@@ -1,3 +1,8 @@
+--Other
+function _G.executable(command)
+    return vim.fn.executable(command) ~= 0
+end
+
 -- Basic
 require('core.plugins')
 require('core.mappings')
@@ -12,8 +17,3 @@ require('plugins.cmp')
 require('plugins.dashboard')
 require('plugins.lualine')
 require('plugins.vimsence')
-
---Other
-function _G.executable(command)
-    return vim.fn.executable(command) ~= 0
-end
