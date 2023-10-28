@@ -26,6 +26,16 @@ require('dashboard').setup {
                 keymap = 'SPC e',
                 key_hl = 'Number',
                 action = ':Neotree focus'
+            },
+			{
+                icon = 'X ',
+                icon_hl = 'Title',
+                desc = 'GET OUT OF VIM',
+                desc_hl = 'String',
+                key = 'x',
+                keymap = 'SPC q q a a',
+                key_hl = 'Number',
+                action = ':qa!'
             }
         }
 	}
