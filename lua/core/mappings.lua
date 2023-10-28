@@ -12,4 +12,4 @@ vim.keymap.set('n', '<A-,>', ':BufferPrevious<CR>')
 vim.keymap.set('n', '<C-W>', ':BufferClose<CR>')
 
 -- Other
-vim.keymap.set('n', '<leader>h', ':e $HOME/.config/nvim/HOTKEYS.txt')
+vim.keymap.set('n', '<leader>h', ':e $HOME/.config/nvim/HOTKEYS.txt', {desc = 'Display hotkeys'})
