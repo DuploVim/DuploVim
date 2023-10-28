@@ -28,7 +28,7 @@ require('dashboard').setup {
                 action = ':Neotree focus'
             },
 			{
-                icon = 'X ',
+                icon = ' ',
                 icon_hl = 'Title',
                 desc = 'GET OUT OF VIM',
                 desc_hl = 'String',
