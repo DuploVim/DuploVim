@@ -12,3 +12,8 @@ require('plugins.cmp')
 require('plugins.dashboard')
 require('plugins.lualine')
 require('plugins.vimsence')
+
+--Other
+function _G.executable(command)
+    return vim.fn.executable(command) ~= 0
+end

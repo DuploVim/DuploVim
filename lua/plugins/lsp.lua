@@ -1,5 +1,6 @@
 local lspconfig = require('lspconfig')
 
-lspconfig.ccls.setup {}
-lspconfig.lua_ls.setup {}
-lspconfig.pylyzer.setup {}
+if executable("ccls") then lspconfig.ccls.setup {} end
+if executable("lua-language-server") then lspconfig.lua_ls.setup {} end
+if executable("pylyzer") then lspconfig.pylyzer.setup {} end
+if executable("rust-analyzer") then lspconfig.rust_analyzer.setup {} end
