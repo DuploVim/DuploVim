@@ -1,4 +1,5 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -11,7 +12,6 @@ if not vim.loop.fs_stat(lazypath) then
 end vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ 'phaazon/hop.nvim' },
 	{ 'nvim-neo-tree/neo-tree.nvim',
 		branch = "v2.x",
 		dependencies = {
@@ -42,5 +42,8 @@ require("lazy").setup({
     		vim.o.timeout = true
     		vim.o.timeoutlen = 300
   		end,
+		opts = {
+
+		}
 	},
 })
