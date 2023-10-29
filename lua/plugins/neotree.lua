@@ -13,6 +13,6 @@ require("neo-tree").setup{
 			visiable = true,
 			hide_dotfiles = false,
 			hide_gitignored = false,
-		},
-	},
+		}
+	}
 }
