@@ -58,4 +58,14 @@ require("lazy").setup({
     	},
    		version = '^1.7.0', -- optional: only update when a new 1.x version is released
   	},
+	{
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require("refactoring").setup()
+    end,
+  },
 })
