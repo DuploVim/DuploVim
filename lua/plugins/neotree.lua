@@ -12,7 +12,7 @@ require("neo-tree").setup{
 		filtered_items = {
 			visiable = true,
 			hide_dotfiles = false,
-			hied_gitignored = false,
+			hide_gitignored = false,
 		},
 	},
 }
