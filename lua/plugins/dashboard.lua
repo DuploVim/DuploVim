@@ -46,7 +46,7 @@ require('dashboard').setup {
                 keymap = 'SPC q q a a',
                 key_hl = 'Number',
                 action = ':qa!'
-            },	
+            },
         }
 	}
 }
