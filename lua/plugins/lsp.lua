@@ -10,6 +10,7 @@ elseif executable("pylyzer") then lspconfig.pylyzer.setup {
 } end
 if executable("rust-analyzer") then lspconfig.rust_analyzer.setup {} end
 if executable("arduino-language-server") then lspconfig.arduino_language_server.setup {} end
+if executable("nixd") then require'lspconfig'.nixd.setup{} end
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
