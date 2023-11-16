@@ -76,4 +76,8 @@ require("lazy").setup({
         },
     },
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{ 'mattn/emmet-vim' },
+	{ 'dcampos/cmp-emmet-vim' },
+	{ 'mfussenegger/nvim-dap' },
+	{ 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'} },
 })
