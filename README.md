@@ -8,6 +8,9 @@ DuploVim is a very easy and customizable neovim configuration
 - pylyzer
 ## Other (required)
 - Nerd Font (very important, but optional)
+- curl
+- unzip
+- compiler (I recommend gcc)
 - python3 provider in neovim
 - neovim (latest)
 
