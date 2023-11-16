@@ -12,7 +12,7 @@ DuploVim is a very easy and customizable neovim configuration
 - unzip
 - compiler (I recommend gcc)
 - python3 provider in neovim
-- neovim (latest)
+- neovim (latest) (install script installs it automatically)
 
 # Installation
 - run ```git clone https://github.com/DuploVim/DuploVim ~/.config/nvim```
