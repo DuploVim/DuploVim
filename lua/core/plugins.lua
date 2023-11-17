@@ -80,4 +80,5 @@ require("lazy").setup({
 	{ 'dcampos/cmp-emmet-vim' },
 	{ 'mfussenegger/nvim-dap' },
 	{ 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'} },
+	{'akinsho/toggleterm.nvim', version = "*", config = true },
 })

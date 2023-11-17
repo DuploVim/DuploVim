@@ -32,8 +32,8 @@ require('dashboard').setup {
                 icon_hl = 'Title',
                 desc = 'Display hotkeys',
                 desc_hl = 'String',
-                key = 'h',
-                keymap = 'SPC h',
+                key = 'H',
+                keymap = 'SPC H',
                 key_hl = 'Number',
                 action = ':e $HOME/.config/nvim/HOTKEYS.txt'
             },

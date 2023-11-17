@@ -12,6 +12,11 @@ NeoTree:
 	SPC e - focus NeoTree
 	SPC o - NeoTree git status
 
+Terminal:
+	SPC h - Open horizontal terminal
+	SPC v - Open vertical terminal
+	SPC f - Open floating terminal
+
 Other:
 	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
 	SPC h - display this help

@@ -11,5 +11,10 @@ vim.keymap.set('n', '<A-.>', ':BufferNext<CR>')
 vim.keymap.set('n', '<A-,>', ':BufferPrevious<CR>')
 vim.keymap.set('n', '<C-W>', ':BufferClose<CR>')
 
+-- Terminal
+vim.keymap.set('n', '<leader>h', ':ToggleTerm direction=horizontal<CR>', {desc = "Open horizontal terminal"})
+vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical<CR>', {desc = "Open vertivel terminal"})
+vim.keymap.set('n', '<leader>f', ':ToggleTerm direction=float<CR>', {desc = "Open floating terminal"})
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
 -- Other
-vim.keymap.set('n', '<leader>h', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
+vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
