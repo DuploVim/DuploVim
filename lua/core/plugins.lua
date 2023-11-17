@@ -79,6 +79,23 @@ require("lazy").setup({
 	{ 'mattn/emmet-vim' },
 	{ 'dcampos/cmp-emmet-vim' },
 	{ 'mfussenegger/nvim-dap' },
-	{ 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'} },
+	{ 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'},
+		config = function()
+			local dap = require("dap")
+			local dapui = require("dapui")
+			dapui.setup()
+			dap.listeners.after.event_initialized["dapui_config"] = function() dapui.open() end
+			dap.listeners.before.event_terminated["dapui_config"] = function() dapui.close() end
+			dap.listeners.before.event_exited["dapui_config"] = function() dapui.close() end
+		end
+	},
 	{'akinsho/toggleterm.nvim', version = "*", config = true },
+	{
+    "Mythos-404/xmake.nvim",
+	branch = "v1",
+    lazy = true,
+    event = "BufReadPost xmake.lua",
+	config = true,
+    dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+	},
 })

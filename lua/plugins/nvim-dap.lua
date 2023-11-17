@@ -1,0 +1,19 @@
+-- local dap = require('dap')
+-- dap.adapters.lldb = {
+--   type = 'executable',
+--   command = '/etc/profiles/per-user/proggerx/bin/lldb-vscode', -- adjust as needed, must be absolute path
+--   name = 'lldb'
+-- }
+--
+-- dap.configurations.cpp = {
+--      {
+--         name = "Launch file",
+--         type = "lldb",
+--         request = "launch",
+--         program = function()
+-- 			return require("xmake").config.target_exec_path
+--         end,
+--         cwd = "${workspaceFolder}",
+--         stopOnEntry = false,
+--     },
+-- }
