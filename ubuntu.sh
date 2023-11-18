@@ -5,7 +5,7 @@ pip3 install --user --upgrade pynvim
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod +x nvim.appimage
 ./nvim.appimage --appimage-extract
-sudo mv ./squashfs-root/* /
+sudo cp ./squashfs-root/* /
 
 git clone https://github.com/DuploVim/DuploVim ~/.config/nvim 
 
