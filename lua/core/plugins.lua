@@ -101,5 +101,12 @@ require("lazy").setup({
 	{
     	'nvim-telescope/telescope.nvim', tag = '0.1.4',
     	dependencies = { 'nvim-lua/plenary.nvim' }
-    }
+    },
+	{
+		'glacambre/firenvim',
+		lazy = not vim.g.started_by_firenvim,
+    	build = function()
+    		vim.fn["firenvim#install"](0)
+    	end
+	},
 })
