@@ -16,5 +16,10 @@ vim.keymap.set('n', '<leader>h', ':ToggleTerm direction=horizontal<CR>', {desc =
 vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical<CR>', {desc = "Open vertivel terminal"})
 vim.keymap.set('n', '<leader>f', ':ToggleTerm direction=float<CR>', {desc = "Open floating terminal"})
 vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+
+-- Telescope
+vim.keymap.set('n', 'tf', ':Telescope find_files<CR>', {desc = "Search files"})
+vim.keymap.set('n', 'tg', ':Telescope live_grep<CR>', {desc = "Telescope live grep"})
+
 -- Other
 vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})

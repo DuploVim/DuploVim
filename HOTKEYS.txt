@@ -17,6 +17,10 @@ Terminal:
 	SPC v - Open vertical terminal
 	SPC f - Open floating terminal
 
+Telescope:
+	t f - find files
+	t g - live grep
+
 Other:
 	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
 	SPC h - display this help

@@ -1,6 +1,8 @@
 local lspconfig = require('lspconfig')
 
-if executable("ccls") then lspconfig.ccls.setup {} end
+if executable("ccls") then lspconfig.ccls.setup {
+	root_dir = lspconfig.util.root_pattern('compile_commands.json', '.vscode/compile_commands.json', '.ccls', '.git')
+} end
 if executable("lua-language-server") then lspconfig.lua_ls.setup {} end
 if executable("pyright") then lspconfig.pyright.setup {
 	root_dir = vim.loop.cwd

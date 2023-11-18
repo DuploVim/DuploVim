@@ -6,9 +6,13 @@ DuploVim is a very easy and customizable neovim configuration
 - ccls
 - lua-language-server
 - pylyzer
+- pyright
+- pasls
+
 ## Other (required)
 - Nerd Font (very important, but optional)
 - curl
+- ripgrep
 - unzip
 - compiler (I recommend gcc)
 - python3 provider in neovim
