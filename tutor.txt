@@ -1,0 +1,309 @@
+Hello, user!
+This is DuploVim (Config of NeoVim, which is fork of Vim)
+
+Let's move
+use this buttons:
+    k
+h       l
+    j
+
+Move down (j button)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Wow! Good Job!
+Now enter insert mode (a key or i key) and type som text on the line below
+
+Ok, to exit insert mode press Esc key
+Move right (l key)                                                                                                                                                          Good Job! Move down (j key)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GJ!
+Select THIS TEXT with visual mode (move cursor to begining, press v, move cursor to the end)
+And delete it (d key)
+After that move down (j key)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Select THIS AWESOME TEXT with visual mode
+and copy it (y key)
+
+
+Paste it to the line below (move cursor to begining of empty line and press p):
+
+After that move down (j key, as you remember)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+There is a WORD, delete it (move cursor to the word and press d a w (delete a word) keys in turn)
+There is a WOORD, delete it without spaces (like previous, but use d i w (delete in word))
+Move down! (remember key)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Delete a word, Delete in word, it's boring
+Lets copy the WORD (y a w) and paste it to the line below (i beleive you remember, but paste is p key)
+
+Move down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c key works like d key, but it enters insert mode after deleting, and d doesn't 
+They Cut/Delete (in Vim this is the same)
+So, delete this WORD with c i w and enter AWESOME_WORD (Exit insert mode with Esc key)
+
+Move down
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+use x key to delete a chAracter, it's fun! (to use x, just move cursor to the character)
+use s key to delete a chAracter and enter insert mode(replace it with O and exit insert mode)
+
+
+Navigate this line only using w(next word) and b(previous word) and delete this WORD (if you don't remember, with d a w)
+
+Demo version end!
