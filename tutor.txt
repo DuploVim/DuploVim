@@ -61,7 +61,7 @@ Move down (j button)
 
 
 Wow! Good Job!
-Now enter insert mode (a key or i key) and type som text on the line below
+Now enter insert mode (a key or i key) and type some text on the line below
 
 Ok, to exit insert mode press Esc key
 Move right (l key)                                                                                                                                                          Good Job! Move down (j key)
@@ -306,4 +306,4 @@ use s key to delete a chAracter and enter insert mode(replace it with O and exit
 
 Navigate this line only using w(next word) and b(previous word) and delete this WORD (if you don't remember, with d a w)
 
-Demo version end!
+Demo version end! You can return to begining (press g g key(it's not a typo, g two times))
