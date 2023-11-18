@@ -1,5 +1,6 @@
 sudo apt install -y git gcc ripgrep unzip ccls curl python3 python3-pip
 sudo snap install pyright --classic
+pip3 install --user --upgrade pynvim
 
 wget https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod +x nvim.appimage
