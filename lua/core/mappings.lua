@@ -15,7 +15,7 @@ vim.keymap.set('n', '<C-W>', ':BufferClose<CR>')
 vim.keymap.set('n', '<leader>h', ':ToggleTerm direction=horizontal<CR>', {desc = "Open horizontal terminal"})
 vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical<CR>', {desc = "Open vertivel terminal"})
 vim.keymap.set('n', '<leader>f', ':ToggleTerm direction=float<CR>', {desc = "Open floating terminal"})
-vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+vim.keymap.set('t', '<C-R>', '<C-\\><C-n>')
 
 -- Telescope
 vim.keymap.set('n', 'tf', ':Telescope find_files<CR>', {desc = "Search files"})
