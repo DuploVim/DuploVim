@@ -23,3 +23,4 @@ vim.keymap.set('n', 'tg', ':Telescope live_grep<CR>', {desc = "Telescope live gr
 
 -- Other
 vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
+vim.keymap.set('n', '<Esc>', ':nohls<CR>')
