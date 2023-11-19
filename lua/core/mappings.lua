@@ -1,7 +1,8 @@
 vim.g.mapleader = " "
 
 -- NeoTree
-vim.keymap.set('n', '<leader>e', ':Neotree<CR>')
+vim.keymap.set('n', '<leader>e', ':Neotree float<CR>')
+vim.keymap.set('n', '<leader>E', ':Neotree left<CR>')
 vim.keymap.set('n', '<leader>o', ':Neotree git_status<CR>')
 vim.keymap.set('n', '<leader>qqaa', ':qa!<CR>')
 
