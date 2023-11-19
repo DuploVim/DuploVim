@@ -102,4 +102,5 @@ require("lazy").setup({
     	end
 	},
 	{ 'mg979/vim-visual-multi' },
+	{ 'kylechui/nvim-surround' },
 })
