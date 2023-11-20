@@ -1,4 +1,4 @@
-HOTKEYS
+HOTKEYS in normal mode
 Tabs:
 	Alt-Tab - next tab
 	Alt-. - next tab too
@@ -20,6 +20,9 @@ Terminal:
 Telescope:
 	t f - find files
 	t g - live grep
+
+Emmet:
+	m - Emmet (press m, then enter emmet snippet and press enter)
 
 Other:
 	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
