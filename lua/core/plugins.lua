@@ -22,7 +22,7 @@ require("lazy").setup({
 	{ 'nvim-treesitter/nvim-treesitter' },
 	{ 'neovim/nvim-lspconfig' },
 	{ 'catppuccin/nvim' },
-	{ 'hrsh7th/vim-vsnip' }, { 'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'}, {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
+	{ 'hrsh7th/vim-vsnip' }, { 'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'}, {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'}, {'ms-jpq/coq_nvim'}, {'ms-jpq/coq.artifacts', branch = 'artifacts'}, {'ms-jpq/coq.thirdparty', branch = '3p' },
 	{
 		'nvimdev/dashboard-nvim',
 		event = 'VimEnter',

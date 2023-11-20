@@ -3,6 +3,9 @@ function _G.executable(command)
     return vim.fn.executable(command) ~= 0
 end
 
+-- Coq
+vim.cmd("let g:coq_settings = { 'auto_start': 'shut-up' }")
+
 -- Basic
 require('core.plugins')
 require('core.mappings')

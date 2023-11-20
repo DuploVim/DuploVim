@@ -22,6 +22,9 @@ vim.keymap.set('t', '<C-R>', '<C-\\><C-n>')
 vim.keymap.set('n', 'tf', ':Telescope find_files<CR>', {desc = "Search files"})
 vim.keymap.set('n', 'tg', ':Telescope live_grep<CR>', {desc = "Telescope live grep"})
 
+-- Emmet
+vim.keymap.set('n', 'm', ':Emmet ')
+
 -- Other
 vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
 vim.keymap.set('n', '<Esc>', ':noh<CR>')
