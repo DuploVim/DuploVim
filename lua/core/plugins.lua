@@ -109,5 +109,9 @@ require("lazy").setup({
     	config = function()
 			require("nvim-surround").setup({})
     	end
-	}
+	},
+	{
+		"pluffie/neoproj",
+		cmd = { "ProjectOpen", "ProjectNew" },
+	},
 })
