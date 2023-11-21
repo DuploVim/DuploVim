@@ -28,4 +28,4 @@ vim.keymap.set('n', 'm', ':Emmet ')
 -- Other
 vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
 vim.keymap.set('n', '<Esc>', ':noh<CR>')
-vim.keymap.set('n', '<C-z>', ':wqa<CR>')
+vim.keymap.set({'n', 'i', 'v', 'x'}, '<C-z>', function () vim.cmd('wqa') end)
