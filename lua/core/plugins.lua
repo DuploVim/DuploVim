@@ -114,5 +114,4 @@ require("lazy").setup({
 		"pluffie/neoproj",
 		cmd = { "ProjectOpen", "ProjectNew" },
 	},
-	{ 'jbyuki/instant.nvim' },
 })
