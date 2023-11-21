@@ -41,15 +41,6 @@ require('dashboard').setup {
 				action = ':Telescope find_files',
 			},
 			{
-				icon = '󱎋 ',
-				icon_hl = 'Title',
-				desc = 'Open tutorial',
-				desc_hl = 'String',
-				key = 't',
-				key_hl = 'Number',
-				action = ':e ~/.config/nvim/tutor.txt',
-			},
-			{
 				icon = '󰮗 ',
 				icon_hl = 'Title',
 				desc = 'Find files by content (livegrep)',
@@ -58,6 +49,15 @@ require('dashboard').setup {
 				keymap = 't g',
 				keey_hl = 'Number',
 				action = ':Telescope live_grep',
+			},
+			{
+				icon = '󱎋 ',
+				icon_hl = 'Title',
+				desc = 'Open tutorial',
+				desc_hl = 'String',
+				key = 't',
+				key_hl = 'Number',
+				action = ':e ~/.config/nvim/tutor.txt',
 			},
 			{
                 icon = ' ',
