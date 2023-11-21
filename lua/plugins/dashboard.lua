@@ -51,6 +51,16 @@ require('dashboard').setup {
 				action = ':Telescope live_grep',
 			},
 			{
+				icon = ' ',
+				icon_hl = 'Title',
+				desc = 'Open floating terminal',
+				desc_hl = 'String',
+				key = 'o',
+				keymap = 'SPC f',
+				keey_hl = 'Number',
+				action = ':ToggleTerm direction=float',
+			},
+			{
 				icon = '󱎋 ',
 				icon_hl = 'Title',
 				desc = 'Open tutorial',
