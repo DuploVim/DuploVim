@@ -4,7 +4,7 @@ function _G.executable(command)
 end
 
 -- Coq
-vim.cmd("let g:coq_settings = { 'auto_start': 'shut-up' }")
+require('plugins.coq')
 
 -- Basic
 require('core.plugins')
