@@ -114,5 +114,8 @@ require("lazy").setup({
 		"pluffie/neoproj",
 		cmd = { "ProjectOpen", "ProjectNew" },
 	},
--- { 'DuploVim/ctrl-z' },
 })
+
+if vim.env.DUPLOVIM_CTRL_Z_WQA == 1 then
+require("lazy").setup({{'DuploVim/ctrl-z'}})
+end
