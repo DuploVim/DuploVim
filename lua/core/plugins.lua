@@ -115,5 +115,6 @@ require("lazy").setup({
 		cmd = { "ProjectOpen", "ProjectNew" },
 	},
  { 'DuploVim/ctrl-z', cond = vim.env.DUPLO_CTRL_Z_WQA == '1' },
- { 'DuploVim/ctrl-s', coond = vim.env.DUPLO_CTRL_S_W == '1' },
+ { 'DuploVim/ctrl-s', cond = vim.env.DUPLO_CTRL_S_W == '1' },
+ { 'DuploVim/ctrl-a'},
 })
