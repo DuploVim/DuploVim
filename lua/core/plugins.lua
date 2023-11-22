@@ -114,4 +114,6 @@ require("lazy").setup({
 		"pluffie/neoproj",
 		cmd = { "ProjectOpen", "ProjectNew" },
 	},
+-- { 'DuploVim/ctrl-z' },
+-- other
 })
