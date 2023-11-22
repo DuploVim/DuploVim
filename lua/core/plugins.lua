@@ -1,4 +1,4 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+9local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -115,5 +115,4 @@ require("lazy").setup({
 		cmd = { "ProjectOpen", "ProjectNew" },
 	},
 -- { 'DuploVim/ctrl-z' },
--- other
 })
