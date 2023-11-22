@@ -117,4 +117,5 @@ require("lazy").setup({
  { 'DuploVim/ctrl-z', cond = vim.env.DUPLO_CTRL_Z_WQA == '1' },
  { 'DuploVim/ctrl-s', cond = vim.env.DUPLO_CTRL_S_W == '1' },
  { 'DuploVim/session-loader' },
+ { 'christoomey/vim-tmux-navigator' },
 })
