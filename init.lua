@@ -3,6 +3,13 @@ function _G.executable(command)
     return vim.fn.executable(command) ~= 0
 end
 
+local vimrc = vim.fn.expand("$HOME/.vimrc")
+
+function _G.file_exists(name)
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
+end
+
 -- Coq
 require('plugins.coq')
 
@@ -27,3 +34,8 @@ require('plugins.ibl')
 require('plugins.toggleterm')
 require('plugins.nvim-dap')
 require('plugins.neoproj')
+
+-- Vimrc
+if file_exists(vimrc) then
+	vim.cmd('so ~/.vimrc')
+end
