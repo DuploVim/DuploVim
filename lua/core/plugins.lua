@@ -119,4 +119,12 @@ require("lazy").setup({
  { 'DuploVim/ctrl-a', cond = vim.env.DUPLO_CTRL_A_SELECT == '1'},
  { 'DuploVim/session-loader' },
  { 'christoomey/vim-tmux-navigator' },
+ {"folke/trouble.nvim",
+ dependencies = { "nvim-tree/nvim-web-devicons" },
+ opts = {
+  -- your configuration comes here
+  -- or leave it empty to use the default settings
+  -- refer to the configuration section below
+ }
+ },
 })
