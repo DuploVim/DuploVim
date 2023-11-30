@@ -34,6 +34,7 @@ require('plugins.ibl')
 require('plugins.toggleterm')
 require('plugins.nvim-dap')
 require('plugins.neoproj')
+require('plugins.trouble')
 
 -- Vimrc
 if file_exists(vimrc) then
