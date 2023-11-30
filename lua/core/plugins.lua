@@ -127,4 +127,5 @@ require("lazy").setup({
   -- refer to the configuration section below
  }
  },
+ { 'lewis6991/spellsitter.nvim' },
 })
