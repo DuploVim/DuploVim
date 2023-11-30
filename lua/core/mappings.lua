@@ -28,3 +28,6 @@ vim.keymap.set('n', 'm', ':Emmet ')
 -- Other
 vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
 vim.keymap.set('n', '<Esc>', ':noh<CR>')
+
+-- Trouble
+vim.keymap.set('n', '<leader>t', ':TroubleToggle<CR>')
