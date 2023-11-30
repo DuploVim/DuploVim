@@ -30,4 +30,5 @@ vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc 
 vim.keymap.set('n', '<Esc>', ':noh<CR>')
 
 -- Trouble
-vim.keymap.set('n', '<leader>t', ':TroubleToggle<CR>')
+vim.keymap.set('n', '<leader>T', ':TroubleToggle<CR>')
+vim.keymap.set('n', '<leader>t', ':Trouble<CR>')
