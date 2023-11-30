@@ -35,7 +35,6 @@ require('plugins.toggleterm')
 require('plugins.nvim-dap')
 require('plugins.neoproj')
 require('plugins.trouble')
-require('plugins.spellsitter')
 
 -- Vimrc
 if file_exists(vimrc) then
