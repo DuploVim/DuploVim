@@ -8,7 +8,6 @@ DuploVim is a very easy and customizable neovim configuration
 - pylyzer
 - pyright
 - pasls
-- directory ```coding``` in your home directory
 
 ## Other (required)
 - Nerd Font (very important, but optional)
@@ -17,6 +16,7 @@ DuploVim is a very easy and customizable neovim configuration
 - unzip
 - compiler (I recommend gcc)
 - python3 provider in neovim
+- directory ```coding``` in your home directory
 - neovim (latest) (install script installs it automatically)
 
 # Installation
