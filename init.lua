@@ -10,9 +10,6 @@ function _G.file_exists(name)
    if f~=nil then io.close(f) return true else return false end
 end
 
--- Coq
-require('plugins.coq')
-
 -- Basic
 require('core.plugins')
 require('core.mappings')
