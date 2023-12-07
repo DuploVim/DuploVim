@@ -12,14 +12,24 @@ local function default_header()
 	}
 end
 
-local home = vim.fn.expand("$HOME")
+local home = vim.fn.expand('$HOME')
 local cwd = tostring(vim.loop.cwd())
 
 require('dashboard').setup {
-	theme = "doom",
+	theme = 'doom',
 	config = {
 		header = default_header(),
         center = {
+			{
+				icon = '󰏇 ',
+				icon_hl = 'Title',
+				desc = 'Open oil',
+				desc_hl = 'String',
+				key = 'E',
+				keymap = '-',
+				key_hl = 'Number',
+				action = ':Oil',
+			},
             {
                 icon = '󰙅 ',
                 icon_hl = 'Title',
