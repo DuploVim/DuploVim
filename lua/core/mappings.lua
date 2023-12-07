@@ -1,32 +1,32 @@
 vim.g.mapleader = " "
 
--- NeoTree
-vim.keymap.set('n', '<leader>e', ':Neotree float<CR>')
-vim.keymap.set('n', '<leader>E', ':Neotree left<CR>')
-vim.keymap.set('n', '<leader>o', ':Neotree git_status<CR>')
-vim.keymap.set('n', '<leader>qqaa', ':qa!<CR>')
+-- FileManagers
+vim.keymap.set('n', '<leader>e', '<CMD>Neotree float<CR>')
+vim.keymap.set('n', '<leader>E', '<CMD>Neotree left<CR>')
+vim.keymap.set('n', '<leader>o', '<CMD>Oil<CR>')
 
 -- Tabs
-vim.keymap.set('n', '<A-Tab>', ':BufferNext<CR>')
-vim.keymap.set('n', '<A-.>', ':BufferNext<CR>')
-vim.keymap.set('n', '<A-,>', ':BufferPrevious<CR>')
-vim.keymap.set('n', '<C-W>', ':BufferClose<CR>')
+vim.keymap.set('n', '<A-Tab>', '<CMD>BufferNext<CR>')
+vim.keymap.set('n', '<A-.>', '<CMD>BufferNext<CR>')
+vim.keymap.set('n', '<A-,>', '<CMD>BufferPrevious<CR>')
+vim.keymap.set('n', '<C-W>', '<CMD>BufferClose<CR>')
 
 -- Terminal
-vim.keymap.set('n', '<leader>h', ':ToggleTerm direction=horizontal<CR>', {desc = "Open horizontal terminal"})
-vim.keymap.set('n', '<leader>v', ':ToggleTerm direction=vertical<CR>', {desc = "Open vertivel terminal"})
-vim.keymap.set('n', '<leader>f', ':ToggleTerm direction=float<CR>', {desc = "Open floating terminal"})
+vim.keymap.set('n', '<leader>h', '<CMD>ToggleTerm direction=horizontal<CR>', {desc = "Open horizontal terminal"})
+vim.keymap.set('n', '<leader>v', '<CMD>ToggleTerm direction=vertical<CR>', {desc = "Open vertivel terminal"})
+vim.keymap.set('n', '<leader>f', '<CMD>ToggleTerm direction=float<CR>', {desc = "Open floating terminal"})
 vim.keymap.set('t', '<C-R>', '<C-\\><C-n>')
 
 -- Telescope
-vim.keymap.set('n', 'tf', ':Telescope find_files<CR>', {desc = "Search files"})
-vim.keymap.set('n', 'tg', ':Telescope live_grep<CR>', {desc = "Telescope live grep"})
+vim.keymap.set('n', 'tf', '<CMD>Telescope find_files<CR>', {desc = "Search files"})
+vim.keymap.set('n', 'tg', '<CMD>Telescope live_grep<CR>', {desc = "Telescope live grep"})
 
 
 -- Other
-vim.keymap.set('n', '<leader>H', ':e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
-vim.keymap.set('n', '<Esc>', ':noh<CR>')
+vim.keymap.set('n', '<leader>H', '<CMD>e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
+vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
+vim.keymap.set('n', '<leader>qqaa', '<CMD>qa!<CR>')
 
 -- Trouble
-vim.keymap.set('n', '<leader>T', ':TroubleToggle<CR>')
-vim.keymap.set('n', '<leader>t', ':Trouble<CR>')
+vim.keymap.set('n', '<leader>T', '<CMD>TroubleToggle<CR>')
+vim.keymap.set('n', '<leader>t', '<CMD>Trouble<CR>')

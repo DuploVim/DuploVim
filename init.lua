@@ -32,6 +32,7 @@ require('plugins.toggleterm')
 require('plugins.nvim-dap')
 require('plugins.neoproj')
 require('plugins.trouble')
+require('plugins.oil')
 
 -- Vimrc
 if file_exists(vimrc) then
