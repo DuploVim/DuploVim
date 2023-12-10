@@ -33,6 +33,9 @@ require('plugins.nvim-dap')
 require('plugins.neoproj')
 require('plugins.trouble')
 require('plugins.oil')
+require('plugins.scrollbar')
+require('plugins.cursorline')
+
 
 -- Vimrc
 if file_exists(vimrc) then

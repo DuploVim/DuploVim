@@ -126,4 +126,10 @@ require('lazy').setup({
 		'stevearc/oil.nvim',
 		dependencies = { 'nvim-tree/nvim-web-devicons' },
 	},
+	{
+		'folke/todo-comments.nvim',
+		opts = {},
+	},
+	{ 'petertriho/nvim-scrollbar' },
+	{ 'yamatsum/nvim-cursorline' },
 })
