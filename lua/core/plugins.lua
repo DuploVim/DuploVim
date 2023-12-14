@@ -132,4 +132,7 @@ require('lazy').setup({
 	},
 	{ 'petertriho/nvim-scrollbar' },
 	{ 'yamatsum/nvim-cursorline' },
+	{ 'SmiteshP/nvim-navic',
+		dependencies = { 'neovim/nvim-lspconfig'},
+	},
 })

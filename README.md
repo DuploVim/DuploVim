@@ -5,8 +5,10 @@ DuploVim is a very easy and customizable neovim configuration
 ## Lsps (optional)
 - ccls
 - lua-language-server
-- pylyzer
+- arduino-language-server
+- rust-analyzer
 - pyright
+- nixd
 - pasls
 
 ## Other (required)

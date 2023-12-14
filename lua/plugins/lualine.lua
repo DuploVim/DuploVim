@@ -1,3 +1,13 @@
+local navic = require('nvim-navic')
+
+local function fnavic()
+  if navic.is_available() then
+		return navic.get_location()
+	else
+		return ""
+	end
+end
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -21,7 +31,7 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch', 'diff'},
     lualine_c = {'filename', 'diagnostics'},
-    lualine_x = {'filetype'},
+    lualine_x = {fnavic, 'filetype'},
     lualine_y = {'location'},
     lualine_z = {'progress'}
   },
