@@ -9,7 +9,7 @@ vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
 vim.keymap.set('n', '<A-Tab>', '<CMD>BufferNext<CR>')
 vim.keymap.set('n', '<A-.>', '<CMD>BufferNext<CR>')
 vim.keymap.set('n', '<A-,>', '<CMD>BufferPrevious<CR>')
-vim.keymap.set('n', '<C-W>', '<CMD>BufferClose<CR>')
+vim.keymap.set('n', '<leader>w', '<CMD>BufferClose<CR>')
 
 -- Terminal
 vim.keymap.set('n', '<leader>h', '<CMD>ToggleTerm direction=horizontal<CR>', {desc = 'Open horizontal terminal'})
