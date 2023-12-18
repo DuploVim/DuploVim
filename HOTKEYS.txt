@@ -3,7 +3,7 @@ Tabs:
 	Alt-Tab - next tab
 	Alt-. - next tab too
 	Alt-, - previous tab
-	Ctrl-W - close tab
+	SPC W - close tab
 
 Comments(only custom):
 	SPC / - toggle line comment
