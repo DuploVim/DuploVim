@@ -24,6 +24,9 @@ Telescope:
 Emmet:
 	m - Emmet (press m, then enter emmet snippet and press enter)
 
+Web Search:
+	SPC s - search
+
 Other:
 	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
 	SPC h - display this help
