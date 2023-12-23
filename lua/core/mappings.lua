@@ -30,3 +30,8 @@ vim.keymap.set('n', '<leader>qqaa', '<CMD>qa!<CR>')
 -- Trouble
 vim.keymap.set('n', '<leader>T', '<CMD>TroubleToggle<CR>')
 vim.keymap.set('n', '<leader>t', '<CMD>Trouble<CR>')
+
+-- Search
+
+vim.keymap.set('n', '<leader>s', '<Plug>SearchNormal')
+vim.keymap.set('v', '<leader>s', '<Plug>SearchVisual')

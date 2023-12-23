@@ -135,4 +135,5 @@ require('lazy').setup({
 	{ 'SmiteshP/nvim-navic',
 		dependencies = { 'neovim/nvim-lspconfig'},
 	},
+	{ 'voldikss/vim-browser-search' },
 })
