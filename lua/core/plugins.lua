@@ -136,4 +136,6 @@ require('lazy').setup({
 		dependencies = { 'neovim/nvim-lspconfig'},
 	},
 	{ 'voldikss/vim-browser-search' },
+	{ 'eandrju/cellular-automaton.nvim' },
+	{ 'elkowar/yuck.vim' },
 })
