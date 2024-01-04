@@ -17,8 +17,8 @@ require('core.colors')
 require('core.configs')
 
 --Plugins
-require('plugins.neotree')
 require('plugins.treesitter')
+require('plugins.dap')
 require('plugins.lsp')
 require('plugins.cmp')
 require('plugins.dashboard')
