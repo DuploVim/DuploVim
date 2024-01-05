@@ -13,6 +13,7 @@ DuploVim is a very easy and customizable neovim configuration
 
 ## Other (required)
 - Nerd Font (very important, but optional)
+- git
 - curl
 - ripgrep
 - unzip
