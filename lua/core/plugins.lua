@@ -138,4 +138,5 @@ require('lazy').setup({
 	{ 'voldikss/vim-browser-search' },
 	{ 'eandrju/cellular-automaton.nvim' },
 	{ 'elkowar/yuck.vim' },
+	{ 'rust-lang/rust.vim' },
 })
