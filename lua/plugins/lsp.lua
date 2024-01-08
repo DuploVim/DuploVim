@@ -1,7 +1,7 @@
 local lspconfig = require('lspconfig')
 local navic = require('nvim-navic')
 
-if executable("ccls") then lspconfig.ccls.setup({
+if executable("clangd") then lspconfig.clangd.setup({
 	root_dir = lspconfig.util.root_pattern('compile_commands.json', '.vscode/compile_commands.json', '.ccls', '.git'),
 	on_attach = function(client, bufnr)
         navic.attach(client, bufnr)
