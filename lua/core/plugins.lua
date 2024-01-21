@@ -101,7 +101,6 @@ require('lazy').setup({
     		vim.fn['firenvim#install'](0)
     	end
 	},
-	{ 'mg979/vim-visual-multi' },
 	{
     	'kylechui/nvim-surround',
     	version = '*', -- Use for stability; omit to use `main` branch for the latest features
