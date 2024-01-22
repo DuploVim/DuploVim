@@ -7,6 +7,11 @@ if executable("clangd") then lspconfig.clangd.setup({
         navic.attach(client, bufnr)
     end,
 }) end
+if executable("tsserver") then lspconfig.tsserver.setup({
+	on_attach = function(client, bufnr)
+		navic.attach(client, bufnr)
+	end,
+}) end
 if executable("lua-language-server") then lspconfig.lua_ls.setup({
 	on_attach = function(client, bufnr)
         navic.attach(client, bufnr)
