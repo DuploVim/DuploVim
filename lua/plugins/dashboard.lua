@@ -21,14 +21,14 @@ require('dashboard').setup {
 		header = default_header(),
         center = {
 			{
-				icon = '󰏇 ',
+				icon = '󰉋 ',
 				icon_hl = 'Title',
-				desc = 'Open oil',
+				desc = 'Open mini.files',
 				desc_hl = 'String',
 				key = 'E',
 				keymap = '-',
 				key_hl = 'Number',
-				action = ':Oil',
+				action = ':lua MiniFiles.open()',
 			},
             {
                 icon = '󰙅 ',
