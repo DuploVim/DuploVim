@@ -161,4 +161,5 @@ require('lazy').setup({
     	},
     	cmd = 'Nerdy',
 	},
+	{ 'rcarriga/nvim-notify' },
 })
