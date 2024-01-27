@@ -153,4 +153,12 @@ require('lazy').setup({
 	},
 	{ 'echasnovski/mini.nvim', version = false },
 	{ 'nvim-tree/nvim-web-devicons'},
+	{
+    	'2kabhishek/nerdy.nvim',
+    	dependencies = {
+    	    'stevearc/dressing.nvim',
+    	    'nvim-telescope/telescope.nvim',
+    	},
+    	cmd = 'Nerdy',
+	},
 })
