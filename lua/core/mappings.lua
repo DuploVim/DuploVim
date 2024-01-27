@@ -26,6 +26,7 @@ vim.keymap.set('n', 'tg', '<CMD>Telescope live_grep<CR>', {desc = 'Telescope liv
 vim.keymap.set('n', '<leader>H', '<CMD>e $HOME/.config/nvim/HOTKEYS.txt<CR>', {desc = 'Display hotkeys'})
 vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
 vim.keymap.set('n', '<leader>qqaa', '<CMD>qa!<CR>')
+vim.keymap.set({'n', 'v'}, '<leader>mksht', '<CMD>lua require("code-shot").shot()<CR>')
 
 -- Trouble
 vim.keymap.set('n', '<leader>T', '<CMD>TroubleToggle<CR>')

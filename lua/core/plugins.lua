@@ -162,5 +162,11 @@ require('lazy').setup({
     	cmd = 'Nerdy',
 	},
 	{ 'rcarriga/nvim-notify' },
-	{ 'niuiic/code-shot.nvim' },
+	{
+		'niuiic/code-shot.nvim',
+		dependencies = {
+			{ 'krivahtoo/silicon.nvim', build = './install.sh build'},
+			{ 'niuiic/core.nvim' },
+		},
+	},
 })
