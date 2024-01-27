@@ -169,4 +169,5 @@ require('lazy').setup({
 			{ 'niuiic/core.nvim' },
 		},
 	},
+	{ 'matbme/JABS.nvim' },
 })
