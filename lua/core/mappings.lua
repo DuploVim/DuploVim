@@ -3,7 +3,7 @@ vim.g.mapleader = ' '
 -- FileManagers
 vim.keymap.set('n', '<leader>e', '<CMD>Neotree float<CR>')
 vim.keymap.set('n', '<leader>E', '<CMD>Neotree left<CR>')
-vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+vim.keymap.set('n', '-', '<CMD>lua MiniFiles.open()<CR>', { desc = 'Open mini.files' })
 
 -- Tabs
 vim.keymap.set('n', '<A-Tab>', '<CMD>BufferNext<CR>')

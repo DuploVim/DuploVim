@@ -16,7 +16,7 @@ require('core.mappings')
 require('core.colors')
 require('core.configs')
 
---Plugins
+-- Plugins
 require('plugins.treesitter')
 require('plugins.dap')
 require('plugins.lsp')
@@ -35,6 +35,7 @@ require('plugins.trouble')
 require('plugins.oil')
 require('plugins.scrollbar')
 require('plugins.cursorline')
+require('plugins.mini')
 
 
 -- Vimrc
