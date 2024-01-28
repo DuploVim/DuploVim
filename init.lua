@@ -36,7 +36,6 @@ require('plugins.oil')
 require('plugins.scrollbar')
 require('plugins.cursorline')
 require('plugins.mini')
-require('plugins.codeshot')
 require('plugins.jabs')
 
 
