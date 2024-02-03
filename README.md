@@ -2,8 +2,9 @@
 DuploVim is a very easy and customizable neovim configuration
 
 # Requirements
-## Lsps (optional)
+## Optional
 - clangd
+- cpplint
 - lua-language-server
 - arduino-language-server
 - rust-analyzer
