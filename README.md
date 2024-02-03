@@ -4,7 +4,6 @@ DuploVim is a very easy and customizable neovim configuration
 # Requirements
 ## Optional
 - clangd
-- cpplint
 - lua-language-server
 - arduino-language-server
 - rust-analyzer
@@ -17,6 +16,7 @@ DuploVim is a very easy and customizable neovim configuration
 - git
 - curl
 - ripgrep
+- cpplint
 - unzip
 - compiler (I recommend gcc)
 - python3 provider in neovim
