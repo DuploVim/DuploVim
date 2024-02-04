@@ -18,7 +18,7 @@ end
 require("neo-tree").setup {
 	popup_border_style = "rounded",
 	filesystem = {
-		hijack_netrw_behavior = get_hijack(),
+		-- hijack_netrw_behavior = get_hijack(),
 		filtered_items = {
 			visiable = true,
 			hide_dotfiles = false,
