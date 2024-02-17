@@ -163,4 +163,5 @@ require('lazy').setup({
 	{ 'rcarriga/nvim-notify' },
 	{ 'matbme/JABS.nvim' },
 	{ 'mfussenegger/nvim-lint' },
+	{ 'lvimuser/lsp-inlayhints.nvim' },
 })

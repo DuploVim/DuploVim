@@ -10,7 +10,8 @@ Comments(only custom):
 
 NeoTree:
 	SPC e - focus NeoTree
-	SPC o - NeoTree git status
+	SPC o - 
+	NeoTree git status
 
 Terminal:
 	SPC h - Open horizontal terminal
@@ -21,12 +22,10 @@ Telescope:
 	t f - find files
 	t g - live grep
 
-Emmet:
-	m - Emmet (press m, then enter emmet snippet and press enter)
-
 Web Search:
 	SPC s - search
 
 Other:
+	"-" - open mini.files
 	SPC q q a a - force quit DuploVim (USE CAREFULLY!!!)
 	SPC h - display this help

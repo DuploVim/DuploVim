@@ -38,6 +38,7 @@ require('plugins.cursorline')
 require('plugins.mini')
 require('plugins.jabs')
 require('plugins.linter')
+require('plugins.inlinehints')
 
 
 -- Vimrc
