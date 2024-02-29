@@ -169,7 +169,11 @@ require('lazy').setup({
 		lazy = true,
 		cmd = 'CarbonNow',
 		---@param opts cn.ConfigSchema
-		opts = { [[ your custom config here ]]
+		opts = { [[ your custom config here ]] },
 	},
-}
+	{
+		'kaarmu/typst.vim',
+		ft = 'typst',
+		lazy=false,
+	},
 })
