@@ -42,6 +42,7 @@ if executable("pasls") then require'lspconfig'.pasls.setup({
 	root_dir = vim.loop.cwd
 }) end
 if executable("typst-lsp") then lspconfig.typst_lsp.setup({
+	root_dir = vim.loop.cwd,
 	on_attach = function(client, bufnr)
         navic.attach(client, bufnr)
     end,
