@@ -164,4 +164,12 @@ require('lazy').setup({
 	{ 'matbme/JABS.nvim' },
 	{ 'mfussenegger/nvim-lint' },
 	{ 'lvimuser/lsp-inlayhints.nvim' },
+	{
+		'ellisonleao/carbon-now.nvim',
+		lazy = true,
+		cmd = 'CarbonNow',
+		---@param opts cn.ConfigSchema
+		opts = { [[ your custom config here ]]
+	},
+}
 })
