@@ -41,6 +41,11 @@ if executable("nixd") then require'lspconfig'.nixd.setup({
 if executable("pasls") then require'lspconfig'.pasls.setup({
 	root_dir = vim.loop.cwd
 }) end
+if executable("typst-lsp") then lspconfig.typst_lsp.setup({
+	on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end,
+}) end
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
