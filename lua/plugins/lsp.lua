@@ -47,6 +47,11 @@ if executable("typst-lsp") then lspconfig.typst_lsp.setup({
         navic.attach(client, bufnr)
     end,
 }) end
+if executable("gopls") then lspconfig.gopls.setup({
+	on_attach = function(client, bufnr)
+        navic.attach(client, bufnr)
+    end,
+}) end
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
