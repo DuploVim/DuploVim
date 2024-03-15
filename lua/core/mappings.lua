@@ -28,6 +28,15 @@ vim.keymap.set('n', '<Esc>', '<CMD>noh<CR>')
 vim.keymap.set('n', '<leader>qqaa', '<CMD>qa!<CR>')
 vim.keymap.set({'n', 'v'}, '<leader>mksht', '<CMD>lua require("code-shot").shot()<CR>')
 
+-- restore the session for the current directory
+vim.api.nvim_set_keymap("n", "<leader>qs", [[<cmd>lua require("persistence").load()<cr>]], {})
+
+-- restore the last session
+vim.api.nvim_set_keymap("n", "<leader>ql", [[<cmd>lua require("persistence").load({ last = true })<cr>]], {})
+
+-- stop Persistence => session won't be saved on exit
+vim.api.nvim_set_keymap("n", "<leader>qd", [[<cmd>lua require("persistence").stop()<cr>]], {})
+
 -- Trouble
 vim.keymap.set('n', '<leader>T', '<CMD>TroubleToggle<CR>')
 vim.keymap.set('n', '<leader>t', '<CMD>Trouble<CR>')

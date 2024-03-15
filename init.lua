@@ -39,6 +39,7 @@ require('plugins.mini')
 require('plugins.jabs')
 require('plugins.linter')
 require('plugins.inlinehints')
+require('plugins.aerial')
 
 
 -- Vimrc

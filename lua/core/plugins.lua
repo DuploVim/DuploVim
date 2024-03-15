@@ -1,14 +1,14 @@
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    'git',
-    'clone',
-    '--filter=blob:none',
-    'https://github.com/folke/lazy.nvim.git',
-    '--branch=stable', -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		'git',
+		'clone',
+		'--filter=blob:none',
+		'https://github.com/folke/lazy.nvim.git',
+		'--branch=stable', -- latest stable release
+		lazypath,
+	})
 end vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
@@ -31,17 +31,17 @@ require('lazy').setup({
 	{ 'nvim-lualine/lualine.nvim', dependencies = {'nvim-tree/nvim-web-devicons'}},
 	{ 'vimsence/vimsence' },
 	{
-    	'windwp/nvim-autopairs',
-    	event = 'InsertEnter',
-    	opts = {}
+			'windwp/nvim-autopairs',
+			event = 'InsertEnter',
+			opts = {}
 	},
 	{
-  		'folke/which-key.nvim',
-  		event = 'VeryLazy',
-  		init = function()
-    		vim.o.timeout = true
-    		vim.o.timeoutlen = 300
-  		end,
+			'folke/which-key.nvim',
+			event = 'VeryLazy',
+			init = function()
+				vim.o.timeout = true
+				vim.o.timeoutlen = 300
+			end,
 		opts = {
 
 		}
@@ -49,32 +49,32 @@ require('lazy').setup({
 	{ 'codota/tabnine-nvim', build = './dl_binaries.sh' },
 	{ 'numToStr/Comment.nvim' },
 	{'romgrk/barbar.nvim',
-    	dependencies = {
-      		'lewis6991/gitsigns.nvim',
-      		'nvim-tree/nvim-web-devicons',
-    	},
-    	init = function() vim.g.barbar_auto_setup = false end,
-    	opts = {
-    	},
-   		version = '^1.7.0', -- optional: only update when a new 1.x version is released
-  	},
+			dependencies = {
+					'lewis6991/gitsigns.nvim',
+					'nvim-tree/nvim-web-devicons',
+			},
+			init = function() vim.g.barbar_auto_setup = false end,
+			opts = {
+			},
+	 		version = '^1.7.0', -- optional: only update when a new 1.x version is released
+		},
 	{
-    	'ThePrimeagen/refactoring.nvim',
-    	dependencies = {
-      		'nvim-lua/plenary.nvim',
-      		'nvim-treesitter/nvim-treesitter',
-    	},
-    	config = function()
-      		require('refactoring').setup()
-    	end,
-  	},
-    {
-        'kdheepak/lazygit.nvim',
-        -- optional for floating window border decoration
-        dependencies = {
-            'nvim-lua/plenary.nvim',
-        },
-    },
+			'ThePrimeagen/refactoring.nvim',
+			dependencies = {
+					'nvim-lua/plenary.nvim',
+					'nvim-treesitter/nvim-treesitter',
+			},
+			config = function()
+					require('refactoring').setup()
+			end,
+		},
+		{
+				'kdheepak/lazygit.nvim',
+				-- optional for floating window border decoration
+				dependencies = {
+						'nvim-lua/plenary.nvim',
+				},
+		},
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	{ 'mattn/emmet-vim' },
 	{ 'dcampos/cmp-emmet-vim' },
@@ -91,23 +91,23 @@ require('lazy').setup({
 	},
 	{'akinsho/toggleterm.nvim', version = '*', config = true },
 	{
-    	'nvim-telescope/telescope.nvim', tag = '0.1.4',
-    	dependencies = { 'nvim-lua/plenary.nvim' }
-    },
+			'nvim-telescope/telescope.nvim', tag = '0.1.4',
+			dependencies = { 'nvim-lua/plenary.nvim' }
+		},
 	{
 		'glacambre/firenvim',
 		lazy = not vim.g.started_by_firenvim,
-    	build = function()
-    		vim.fn['firenvim#install'](0)
-    	end
+			build = function()
+				vim.fn['firenvim#install'](0)
+			end
 	},
 	{
-    	'kylechui/nvim-surround',
-    	version = '*', -- Use for stability; omit to use `main` branch for the latest features
-    	event = 'VeryLazy',
-    	config = function()
+			'kylechui/nvim-surround',
+			version = '*', -- Use for stability; omit to use `main` branch for the latest features
+			event = 'VeryLazy',
+			config = function()
 			require('nvim-surround').setup({})
-    	end
+			end
 	},
 	{
 		'pluffie/neoproj',
@@ -146,19 +146,19 @@ require('lazy').setup({
 		keys = {
 			{ '<c-s>', mode = { 'n', 'x', 'o' }, function() require('flash').jump() end, desc = 'Flash' },
 			{ '<m-s>', mode = { 'n', 'x', 'o' }, function() require('flash').treesitter() end, desc = 'Flash Treesitter' },
-    		{ 'r', mode = 'o', function() require('flash').remote() end, desc = 'Remote Flash' },
-    		{ 'R', mode = { 'o', 'x' }, function() require('flash').treesitter_search() end, desc = 'Treesitter Search' },
-  		},
+				{ 'r', mode = 'o', function() require('flash').remote() end, desc = 'Remote Flash' },
+				{ 'R', mode = { 'o', 'x' }, function() require('flash').treesitter_search() end, desc = 'Treesitter Search' },
+			},
 	},
 	{ 'echasnovski/mini.nvim', version = false },
 	{ 'nvim-tree/nvim-web-devicons'},
 	{
-    	'2kabhishek/nerdy.nvim',
-    	dependencies = {
-    	    'stevearc/dressing.nvim',
-    	    'nvim-telescope/telescope.nvim',
-    	},
-    	cmd = 'Nerdy',
+			'2kabhishek/nerdy.nvim',
+			dependencies = {
+					'stevearc/dressing.nvim',
+					'nvim-telescope/telescope.nvim',
+			},
+			cmd = 'Nerdy',
 	},
 	{ 'rcarriga/nvim-notify' },
 	{ 'matbme/JABS.nvim' },
@@ -175,5 +175,30 @@ require('lazy').setup({
 		'kaarmu/typst.vim',
 		ft = 'typst',
 		lazy=false,
+	},
+	{
+		"folke/twilight.nvim",
+	},
+	{
+		"folke/persistence.nvim",
+		event = "BufReadPre",
+	},
+	--[[ {
+		"folke/drop.nvim",
+		event = "VimEnter",
+		config = function()
+			require("drop").setup({
+				theme = "stars",
+				max = 15,
+			})
+		end,
+	}, ]]
+	{
+		'stevearc/aerial.nvim',
+		opts = {},
+		dependencies = {
+			 "nvim-treesitter/nvim-treesitter",
+			 "nvim-tree/nvim-web-devicons"
+		},
 	},
 })
