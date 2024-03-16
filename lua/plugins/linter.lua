@@ -1,5 +1,6 @@
 require('lint').linters_by_ft = {
-  cpp = {'cpplint',}
+  cpp = {'cpplint',},
+  go = {'golangci-lint',},
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {
