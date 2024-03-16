@@ -177,18 +177,18 @@ require('lazy').setup({
 		lazy=false,
 	},
 	{
-		"folke/twilight.nvim",
+		'folke/twilight.nvim',
 	},
 	{
-		"folke/persistence.nvim",
-		event = "BufReadPre",
+		'folke/persistence.nvim',
+		event = 'BufReadPre',
 	},
 	--[[ {
-		"folke/drop.nvim",
-		event = "VimEnter",
+		'folke/drop.nvim',
+		event = 'VimEnter',
 		config = function()
-			require("drop").setup({
-				theme = "stars",
+			require('drop').setup({
+				theme = 'stars',
 				max = 15,
 			})
 		end,
@@ -197,8 +197,21 @@ require('lazy').setup({
 		'stevearc/aerial.nvim',
 		opts = {},
 		dependencies = {
-			 "nvim-treesitter/nvim-treesitter",
-			 "nvim-tree/nvim-web-devicons"
+			 'nvim-treesitter/nvim-treesitter',
+			 'nvim-tree/nvim-web-devicons'
 		},
+	},
+	{
+		'ray-x/go.nvim',
+		dependencies = {	-- optional packages
+			'ray-x/guihua.lua',
+			'neovim/nvim-lspconfig',
+			'nvim-treesitter/nvim-treesitter',
+		},
+		config = function()
+			require('go').setup()
+		end,
+		lazy = false,
+		ft = {'go', 'gomod'},
 	},
 })
