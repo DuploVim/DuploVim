@@ -10,8 +10,6 @@ Comments(only custom):
 
 NeoTree:
 	SPC e - focus NeoTree
-	SPC o - 
-	NeoTree git status
 
 Terminal:
 	SPC h - Open horizontal terminal
