@@ -22,7 +22,7 @@ DuploVim is a very easy and customizable neovim configuration
 - compiler (I recommend gcc)
 - python3 provider in neovim
 - directory ```coding``` in your home directory
-- neovim (latest) (install script installs it automatically)
+- neovim (latest)
 
 # Installation
 - satisfy dependencies by youself
