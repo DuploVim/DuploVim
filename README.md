@@ -8,6 +8,7 @@ DuploVim is a very easy and customizable neovim configuration
 - arduino-language-server
 - rust-analyzer
 - pyright
+- gopls
 - nixd
 - pasls
 
