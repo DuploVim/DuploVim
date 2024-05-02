@@ -223,4 +223,5 @@ require('lazy').setup({
 			})
 		end,
 	},
+	{ 'xiyaowong/transparent.nvim' },
 })
