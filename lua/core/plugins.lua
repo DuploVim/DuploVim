@@ -178,6 +178,7 @@ require('lazy').setup({
 	{
 		'folke/persistence.nvim',
 		event = 'BufReadPre',
+		opts = {},
 	},
 	--[[ {
 		'folke/drop.nvim',
