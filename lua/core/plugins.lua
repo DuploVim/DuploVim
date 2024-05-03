@@ -78,7 +78,7 @@ require('lazy').setup({
 	{ 'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {} },
 	{ 'mattn/emmet-vim' },
 	{ 'dcampos/cmp-emmet-vim' },
-	{ 'mfussenegger/nvim-dap' },
+	--[[ { 'mfussenegger/nvim-dap' },
 	{ 'rcarriga/nvim-dap-ui', requires = {'mfussenegger/nvim-dap'},
 		config = function()
 			local dap = require('dap')
@@ -88,7 +88,7 @@ require('lazy').setup({
 			dap.listeners.before.event_terminated['dapui_config'] = function() dapui.close() end
 			dap.listeners.before.event_exited['dapui_config'] = function() dapui.close() end
 		end
-	},
+	}, ]]
 	{'akinsho/toggleterm.nvim', version = '*', config = true },
 	{
 			'nvim-telescope/telescope.nvim', tag = '0.1.4',
@@ -144,11 +144,7 @@ require('lazy').setup({
 		---@type Flash.Config
 		opts = {},
 		keys = {
-			{ '<c-s>', mode = { 'n', 'x', 'o' }, function() require('flash').jump() end, desc = 'Flash' },
-			{ '<m-s>', mode = { 'n', 'x', 'o' }, function() require('flash').treesitter() end, desc = 'Flash Treesitter' },
-				{ 'r', mode = 'o', function() require('flash').remote() end, desc = 'Remote Flash' },
-				{ 'R', mode = { 'o', 'x' }, function() require('flash').treesitter_search() end, desc = 'Treesitter Search' },
-			},
+		},
 	},
 	{ 'echasnovski/mini.nvim', version = false },
 	{ 'nvim-tree/nvim-web-devicons'},
