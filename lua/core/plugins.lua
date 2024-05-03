@@ -221,4 +221,5 @@ require('lazy').setup({
 		end,
 	},
 	{ 'xiyaowong/transparent.nvim' },
+	{ 'p00f/cphelper.nvim' },
 })
