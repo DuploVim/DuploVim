@@ -228,4 +228,5 @@ require('lazy').setup({
 		opts = true, -- needed even when using default config
 	},
 	{ 'rktjmp/paperplanes.nvim' },
+	{ 'https://git.sr.ht/~reggie/licenses.nvim' },
 })
