@@ -222,4 +222,10 @@ require('lazy').setup({
 	},
 	{ 'xiyaowong/transparent.nvim' },
 	{ 'p00f/cphelper.nvim' },
+	{
+		'chrisgrieser/nvim-origami',
+		event = 'BufReadPost', -- later or on keypress would prevent saving folds
+		opts = true, -- needed even when using default config
+	},
+	{ 'rktjmp/paperplanes.nvim' },
 })
