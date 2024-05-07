@@ -229,4 +229,5 @@ require('lazy').setup({
 	},
 	{ 'rktjmp/paperplanes.nvim' },
 	{ 'https://git.sr.ht/~reggie/licenses.nvim' },
+	{ 'folke/neodev.nvim', opts = {} },
 })
